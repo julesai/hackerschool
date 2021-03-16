@@ -17,7 +17,9 @@ print(saetze)
 # erstmal eine leere Liste
 saetze_ohne_newline = []
 for satz in saetze:
+    # hier lassen wir das \n am Ende weg
     satz = satz.strip()
+    # hier wird ein neues Element in eine leere Liste eingefügt
     saetze_ohne_newline.append(satz)
 
 print(saetze_ohne_newline)

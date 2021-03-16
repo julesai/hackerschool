@@ -6,7 +6,7 @@ import spacy
 from spacy.lang.de.examples import sentences
 
 nlp = spacy.load("de_core_news_sm")
-#doc = nlp(sentences[0])
+
 
 doc = nlp('Das ist mein Testsatz, den ich gerne bearbeiten würde.')
 doc = nlp('was ist eine Ente, ist das ein kleines Tier oder ein großes Tiergit')
