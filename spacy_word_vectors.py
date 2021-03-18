@@ -17,8 +17,7 @@ for idx, satz in enumerate(saetze_ohne_newline):
     # lasst uns den Satz in Wörter zerteilen
     woerter = satz.split(' ')
     print(woerter)
-    spacy_satz = nlp(satz)
-    satz_vektoren_spacy[idx, :] = spacy_satz.vector
+
     # nun kommen die neuen Wörter zu alle_woerter dazu
     alle_woerter = alle_woerter + woerter
     # Listen können wir wieder mit + zusammen fügen
@@ -60,7 +59,7 @@ for satz in saetze_ohne_newline:
 
 print(wort_vektoren[:,:])
 
-print(satz_vektoren_spacy)
+
 
 
 
