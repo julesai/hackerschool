@@ -29,3 +29,23 @@ else:
     print('Ich bin jünger als 15.')
 
 # Ändere jetzt das Alter auf 16 und sieh was passiert
+
+
+# es gibt noch eine weitere Art von Schleifen:
+# while macht etwas so lange, bis die Bedingung nicht mehr erfüllt ist
+# das heisst man weiß vorher manchmal gar nicht, wie oft die Schleife abläuft
+# hier müssen wir zuerst etwas wahres definieren:
+# wahr = True
+mach_weiter = True
+while mach_weiter == True:
+    # wir vergleichen den Wert mit einem doppelten ==
+    # wir könnten auch vereinfacht sagen
+    # while mach_weiter:
+    print('Dieser Text kommt, bis du EXIT auf der Konsole eintippst')
+    eingabe = input('Tippe hier:')
+    if eingabe == 'EXIT':
+        mach_weiter = False  # hier setzen wir mach_weiter auf False (nur ein = zum setzen)
+
+
+# sind dir die Einrückungen aufgefallen?
+# du kannst da mal was ändern und sehen, dass der Code nicht mehr laufen wird
