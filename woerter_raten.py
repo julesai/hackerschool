@@ -1,36 +1,33 @@
-# Ein kleines Spiel bei dem man Woerter raten kann
-import random
-
-# Woerter einlesen
-woerter = []
-datei = 'Essen_kochen.txt'
-with open(datei, 'r') as datei_handle:
-    for line in datei_handle.readlines():
-        woerter.append(line.strip())
-print(woerter)
-
-# Aus diesen Wörtern suchen wir uns ein zufälliges aus
-zufallszahl = random.randint(0, len(woerter))# eine Zahl zwischen 0 und Länge der Wörter
-zufallswort = woerter[zufallszahl]  # so bekommen wir das Zufallswort
-print(zufallswort)     # hier auskommentieren nach dem Testen!
+# Programmiere hier dein erstes eigenes Wörter raten Spiel
+# wir haben dir hier schon die wichtigsten Schritte vorgegeben, um den Code zu strukturieren
 
 
-geraten = False
-runden = 0
-
-while geraten == False:
-    if runden == 0:
-        wort = input(f'Ich habe ein zufälliges Wort ausgesucht ({len(zufallswort)} Buchstaben)\nrate das Wort: ')
-    else:
-        wort = input('rate nochmal: ')
-    runden += 1
-
-    if wort == zufallswort:
-        print(f'Yeah du hast es geschafft!! Das Wort war {zufallswort}. Das war super!')
-        print(f'Du hast {runden} Versuche gebraucht')
-        geraten = True
+# importiere das Paket für die Zufallszahlen
 
 
+# lies die Datei Essen_kochen.txt ein - darin sind viele Wörter enthalten
 
 
+# mache die Enter am Ende jedes Wortes weg
 
+
+# um das Spiel leichter zu machen, gib hier die Liste der möglichen Wörter aus
+
+
+# suche dir ein zufälliges Wort aus
+
+
+# Schreibe eine Aufforderung, ein Wort einzugeben
+
+
+# mache eine Schleife, die so oft läuft, bis das richtige Wort geraten wurde
+
+
+# Lies die Eingabe von der Konsole aus und vergleiche mit deinem geheimen Wort
+
+
+# Gratuliere dem Benutzer, wenn er richtig geraten hat
+
+
+# Juhu du hast dein erstes Spiel geschrieben!
+# Vielleicht hast du ja noch ein paar Ideen, wie man es noch lustiger machen kann
